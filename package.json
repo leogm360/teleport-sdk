@@ -15,6 +15,7 @@
   "scripts": {
     "prebuild": "echo 'To implement'",
     "build": "tsc --project tsconfig.json",
+    "script:install": "tsx src/scripts/install-bin/index.ts",
     "format": "prettier --write .",
     "lint": "eslint ."
   },
@@ -25,7 +26,11 @@
     "@types/node": "20.14.0",
     "eslint": "^9.8.0",
     "prettier": "^3.3.3",
+    "tsx": "^4.17.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1"
+  },
+  "dependencies": {
+    "tar": "^7.4.3"
   }
 }
